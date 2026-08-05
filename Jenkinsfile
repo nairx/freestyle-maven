@@ -24,7 +24,7 @@ pipeline {
             steps{
                bat '''
                 taskkill /F /IM java.exe || exit 0
-                start java -jar D:\\freestyle-maven\hello.jar
+                start java -jar D:\\freestyle-maven\\hello.jar
                 '''
             }
         }

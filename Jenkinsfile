@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('Checkout'){
             steps{
-                git branch 'main',url:'https://github.com/nairx/freestyle-maven.git'
+                git branch:'main',url:'https://github.com/nairx/freestyle-maven.git'
             }
         }
         stage('Build'){

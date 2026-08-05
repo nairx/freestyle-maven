@@ -22,10 +22,10 @@ pipeline {
         }
         stage('Run Application'){
             steps{
-                bat "'
+               bat '''
                 taskkill /F /IM java.exe || exit 0
                 start java -jar D:\\freestyle-maven\hello.jar
-                '"
+                '''
             }
         }
     }

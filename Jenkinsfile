@@ -28,8 +28,8 @@ pipeline {
         stage('Run Application'){
             steps{
                bat '''
-                taskkill /F /IM java.exe || exit 0
-                start "" java -jar D:\\freestyle-maven\\hello.jar
+                //taskkill /F /IM java.exe || exit 0
+                start "HelloApp" java -jar D:\\freestyle-maven\\hello.jar
                 '''
             }
         }

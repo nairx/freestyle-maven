@@ -29,9 +29,4 @@ pipeline {
             }
         }
     }
-     post {
-        always {
-            archiveArtifacts artifacts: 'target/*.jar'
-        }
-    }
 }

@@ -15,6 +15,11 @@ pipeline {
                 bat 'mvn clean package'
             }
         }
+        stage('Test') {
+            steps {
+                bat 'mvn test'
+            }
+        }
         stage('Deploy'){
             steps{
                 bat 'copy target\\freestyle-maven-1.0-SNAPSHOT.jar D:\\freestyle-maven\\hello.jar'
